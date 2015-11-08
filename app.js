@@ -8,7 +8,7 @@ app.config(function($routeProvider){
 });
 
 app.factory('uchat', ['$http', function($http){
-	return $http.get('http://localhost/u-chat/data.json')
+	return $http.get('http://batnyam.github.io/data.json')
 	.success(function(data){
 		return data;
 	})
