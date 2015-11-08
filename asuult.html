@@ -1,0 +1,10 @@
+	<div id="wrapper" >
+		<div class="input"><input type="text" name="sedev" ng-model="search"/></div>
+		<div class="hariultuud">
+			<div class="hariult" ng-repeat="hariult in uchat.hariults | filter:search">
+				<span class="asuult">A: {{ hariult.asuult }}</span>
+				<br>
+				<span class="hariult">H: {{ hariult.hariu }}</span>
+			</div>
+		</div>
+	</div>	
